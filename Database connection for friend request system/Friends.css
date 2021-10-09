@@ -1,0 +1,317 @@
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+h2{
+    padding: 0px 300px;
+
+    color: #0DB6BA;
+    font-size: 40px;
+}
+header{
+    position: ;
+    background: #0DB6BA;
+    width: 100%;
+    padding: -10px;
+    width: 100%;
+    height: 80px;
+
+}
+
+.left_area h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.logout_btn{
+    padding: 5px;
+    background: white;
+    text-decoration: none;
+    float: right;
+    margin-right: 40px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0DB6BA;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover{
+    background: #0DB6BA;
+    color: white ;
+    border: 1px solid white;
+}
+.sidebar{
+    background: #0DB6BA;
+    margin-top: 0px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: o.5s;
+    transition-property: left;
+}
+.sidebar a{
+    color: #ffff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: white;
+    color:#0DB6BA ;
+    width: 100%;
+}
+.sidebar i{
+    padding-right: 10px;
+
+}
+label #sidebar_btn{
+    z-index: 1;
+    color:white;
+    position: fixed;
+    cursor: pointer;
+    left: 200px;
+    font-size: 20px;
+    margin:  0;
+    padding: 15px;
+    transition: 0.5s;
+    transition-property: color; 
+}
+label #sidebar_btn:hover{
+    color: black;
+}
+#check:checked ~ .sidebar{
+    left: -140px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 120px;
+    width: 130px;
+}
+#check{
+    display: none;
+}
+
+.form_link{
+    float: right;
+    font-size: 16px;
+}
+.site_link,.login_signup_container p{
+    font-size: 14px;
+    text-align: center;
+    color: #3D4852;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.site_link:hover,.form_link:hover,.login_signup_container p a:hover{
+    text-decoration: underline;
+    color: #1F9D55;
+}
+
+.login_signup_container .errorMsg{
+    border: 2px solid #CC1F1A;
+    color: #CC1F1A;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+.login_signup_container .successMsg{
+    border: 2px solid #1F9D55;
+    color: #1F9D55;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.profile_container{
+    margin: 10px 300px;
+    max-width: 600px;
+    background-color: lightcyan;
+    border: 1px solid rgba(23,23,23, .1);
+    padding: 10px;
+}
+
+.profile_container nav ul{
+    list-style: none;
+    padding: 5px 0;
+    margin:10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(23,23,23, .2);
+    border-bottom: 1px solid rgba(23,23,23, .2);
+    justify-content: center;
+    background: #0DB6BA;
+    border-radius: 2px;
+}
+.profile_container nav ul li a{
+    color: white;
+    font-size: 14px;
+    display: block;
+    padding:5px 10px;
+    margin:0 3px;
+}
+
+.profile_container nav ul li a:hover{
+    background-color: ghostwhite;
+    color: #0DB6BA;
+}
+
+.profile_container nav .badge{
+    background: #FFF;
+    display: inline-block;
+    padding:0 5px;
+    margin-left: 3px;
+    color: #000;    
+    border-radius: 20px;
+}
+
+.profile_container nav .redBadge{
+    background-color: #E3342F;
+    color: #FFF;
+}
+
+.inner_profile .img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #0DB6BA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+            0 2px 4px 0 rgba(0,0,0,0.08);
+    border: 3px solid #0DB6BA;
+    margin: 0 auto;
+}
+.inner_profile .img img{
+    max-height: 100%;
+    width: auto;
+}
+.inner_profile h1{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.active{
+    outline: none;
+    background-color: darkcyan; !important;
+    color: darkcyan; !important;
+}
+
+/* ALL USERS */
+
+.all_users .usersWrapper{   
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.all_users .user_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid rgba(23,23,23, .2);
+    margin: 5px;
+    padding: 5px;
+    width: 48%;
+    background-color: #FFF;
+    align-items: stretch;
+}
+.user_box .user_img{
+
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(23,23,23, .1);
+    margin-right: 5px;
+    border-radius: 2px;
+    background-color: #E6E8FF;
+}
+.user_box .user_img img{
+    height: 100%;
+    width: auto;
+}
+.user_box .user_info{
+    flex-grow: 1;
+}
+.user_info span{
+    display: block;
+}
+.user_info span:first-child{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: #222222;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.see_profileBtn{
+    background-color: #0DB6BA;
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+    padding:3px 7px;
+    text-transform: uppercase;
+}
+.see_profileBtn:hover{
+    background-color: darkcyan;
+}
+
+.actions{
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid rgba(23,23,23, .1);
+    padding: 10px;
+    background-color: white;
+}
+
+.req_actionBtn{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding:5px 10px;
+    border: 1px solid rgba(23,23,23, .1);
+    color: #222222;
+}
+
+.acceptRequest,.sendRequest{
+    background-color: seagreen;
+    color: white;
+}
+.acceptRequest:hover,.sendRequest:hover{
+    background-color: #0DB6BA;
+}
+.unfriend, .ignoreRequest,.cancleRequest{
+    background-color: red;
+    color: white;
+}
+.unfriend:hover,.ignoreRequest:hover,.cancleRequest:hover{
+    background-color: darkred;
+    
+}
