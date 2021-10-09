@@ -1,0 +1,89 @@
+body{
+		margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	}
+	
+	.top_bar{
+	height: 50px;
+	background-color: #0DB6BA;
+	color:   #ffffff;
+    }
+
+    .left_area{
+    margin: 0;	
+	width: 800px; 
+	font-size: 22px; 
+	text-transform: uppercase; 
+	font-weight: 900;
+	position:center;
+    }
+    
+    .search_box{
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding:4px;
+    font-size: 12px;
+    background-image: url(search.png);
+    background-position: right;
+    }
+
+    .content{
+        width: 800px;
+        margin: auto;
+        min-height: 400px;
+        background-color: #ffffff;
+    }
+
+    .profile_picture{
+        width: 150px;
+        margin: auto;
+        margin-top: -200px;                                                                                                                                         
+        border: solid 2px color: #bfbfbf;
+    }
+
+    .menu_btns{
+        width: 100px;
+        display: inline-block;
+
+    }
+
+    .about_bar{
+        background-color:#ffffff; 
+        min-height: 400px;
+        margin-top: 20px;
+        color: #000000; 
+        padding: 8px;
+
+    }
+    .text_area{
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        height: 60px;
+        font-family: tahoma;
+    }
+    .post_btn{
+        float: right;
+        background-color:#0DB6BA;
+        border: none;
+        color: #ffffff;
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 2px;
+        width: 50px;
+    }
+
+    .post_bar{
+        margin-top: 20px;
+        background-color:c;
+        padding: 10px; 
+    }
+    .post{
+        padding:4px; 
+        font-size:13px;
+        display:flex;
+        margin-bottom: 20px;
+    }

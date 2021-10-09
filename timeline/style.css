@@ -1,0 +1,183 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	}
+header{
+    position: fixed;
+    background: #0DB6BA;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+
+}
+.left_area h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+.logout_btn{
+    padding: 5px;
+    background: white;
+    text-decoration: none;
+
+    float: right;
+    margin-right: 40px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0DB6BA;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover{
+    background: #0DB6BA;
+    color: white ;
+}
+.sidebar{
+    background: #0DB6BA;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: o.5s;
+    transition-property: left;
+}
+.sidebar a{
+    color: #ffff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: white;
+    color:#0DB6BA ;
+}
+.sidebar i{
+    padding-right: 10px;
+
+}
+label #sidebar_btn{
+    z-index: 1;
+    color:white;
+    position: fixed;
+    cursor: pointer;
+    left: 200px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color; 
+}
+label #sidebar_btn:hover{
+    color: #00ace6;
+}
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+#check{
+    display: none ;
+}
+	
+	.top_bar{
+	height: 50px;
+	background-color: #0DB6BA;
+	color:   #ffffff;
+    }
+
+    .left_area{
+    margin: 0;	
+	width: 800px; 
+	font-size: 22px; 
+	text-transform: uppercase; 
+	font-weight: 900;
+	position:center;
+    }
+    
+    .search_box{
+    width: 400px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding:4px;
+    font-size: 12px;
+    background-image: url(search.png);
+    background-position: right;
+    }
+
+    .content{
+        width: 600px;
+        margin: auto;
+        min-height: 400px;
+        background-color: #ffffff;
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    .menu_btns{
+        width: 100px;
+        display: inline-block;
+
+    }
+
+    .text_area{
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        height: 60px;
+        font-family: tahoma;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .post_btn{
+        float: right;
+        background-color:#0DB6BA;
+        border: solid 1px white;
+        color: white;
+       border-radius: 20px;
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 2px;
+        width: 50px;
+    }
+    .post_btn: hover{
+        float: right;
+        background-color:white;
+        border: none;
+        color: #0DB6BA;
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 2px;
+        width: 50px;
+    }
+
+    .post_bar{
+        margin-top: 20px;
+        background-color:#ffffff;
+        padding: 10px 20px; 
+    }
+    .post{
+
+        padding:20px 250px; 
+        font-size:13px;
+        display:flex;
+        margin-bottom: 20px;
+    }

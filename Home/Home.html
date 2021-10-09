@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="home.css">
+   <title>LINKER! | WELCOME</title>
+  
+ </head>
+  <body>
+ 
+
+ <section class="showcase">
+    <header>
+      <h1 class="logo"></h1>
+      <div class="toggle"></div>
+    </header>
+  
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>LINKER!</h2> 
+      <br> 
+      <h3>A Sanctum for passionate individuals</h3>
+      <p>A social platform where passionate individuals can collaborate with their own taste and touch.</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Our Goal</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+
+ </body>
+</html>

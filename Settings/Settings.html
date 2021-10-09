@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Sidebar Menu</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="settings.css">
+</head>
+<body>
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check">
+			<i class="fas fa-bars" id="sidebar_btn"></i>
+		</label>
+		<div class="left_area">
+			<h3>Linker!</h3>
+		</div>
+		<div class="right_area">
+			<a href="#" class="logout_btn">Logout</a>
+		</div>
+	</header>
+	<div class="sidebar">
+		<a href="#"><i class="far fa-user-circle"></i><span>My Profile</span></a>
+		<a href="#"><i class="fas fa-newspaper"></i><span>Newsfeed</span></a>
+		<a href="#"><i class="fas fa-users"></i><span>Friends</span></a>
+		<a href="#"><i class="fas fa-cog"></i><span>Settings</span></a>
+	</div>
+	<div class="container">
+		<div class="leftbox">
+			<nav>
+				<a onclick="tabs(0)" class="tab active">
+					<i class="fa fa-user"></i>
+				</a>
+
+				<a onclick="tabs(1)" class="tab">
+					<i class="fas fa-user-cog"></i>
+				</a>
+
+				<a onclick="tabs(2)" class="tab">
+					<i class="fas fa-tasks"></i>
+				</a>
+
+				<a onclick="tabs(3)" class="tab">
+					<i class="fa fa-tv"></i>
+				</a>
+
+				<a onclick="tabs(4)" class="tab">
+					<i class="fas fa-users-cog"></i>
+				</a>
+
+			</nav>
+		</div>
+		<div class="rightbox">
+			<div class="profile tabShow">
+
+				<h1>Personal Info</h1>
+				<h2>Full Name</h2>
+				<input type="text" class="Input" value="    jane doe" >
+
+				<h2>Birthday</h2>
+				<input type="text" class="Input" value="    April1" >
+				<h2>Gender</h2>
+				<input type="text" class="Input" value="    Male" >
+				<h2>Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Contact</h2>
+				<input type="text" class="Input" value="    1234" >
+				<button class="btn"> Update </button>
+
+			</div>
+
+			<div class="Security and Login tabShow">
+
+				<h1>Account Settings</h1>
+				<h2>Password</h2>
+				<input type="text" class="Input" value="    Lol" >
+
+				<h2>Backup Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Gender</h2>
+				<input type="text" class="Input" value="    Male" >
+				<h2>Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Password</h2>
+				<input type="text" class="Input" value="    Lol" >
+				<button class="btn"> Update </button>
+
+			</div>
+
+			<div class="Subcription tabShow">
+
+				<h1>Personal Info</h1>
+				<h2>Full Name</h2>
+				<input type="text" class="Input" value="    jane doe" >
+
+				<h2>Birthday</h2>
+				<input type="text" class="Input" value="    April1" >
+				<h2>Gender</h2>
+				<input type="text" class="Input" value="    Male" >
+				<h2>Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Password</h2>
+				<input type="text" class="Input" value="    Lol" >
+				<button class="btn"> Update </button>
+
+			</div>
+
+			<div class="Subcription tabShow">
+
+				<h1>Personal Info</h1>
+				<h2>Full Name</h2>
+				<input type="text" class="Input" value="    jane doe" >
+
+				<h2>Birthday</h2>
+				<input type="text" class="Input" value="    April1" >
+				<h2>Gender</h2>
+				<input type="text" class="Input" value="    Male" >
+				<h2>Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Password</h2>
+				<input type="text" class="Input" value="    Lol" >
+				<button class="btn"> Update </button>
+
+			</div>
+
+			<div class="Subcription tabShow">
+
+				<h1>Personal Info</h1>
+				<h2>Full Name</h2>
+				<input type="text" class="Input" value="    jane doe" >
+
+				<h2>Birthday</h2>
+				<input type="text" class="Input" value="    April1" >
+				<h2>Gender</h2>
+				<input type="text" class="Input" value="    Male" >
+				<h2>Email</h2>
+				<input type="text" class="Input" value="    example@gmail.com" >
+				<h2>Password</h2>
+				<input type="text" class="Input" value="    Lol" >
+				<button class="btn"> Update </button>
+
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script >
+		const tabBtn = document.querySelectorAll(".tab");
+		const tab = document.querySelectorAll(".tabShow");
+
+		function tabs(panelIndex) {
+			tab.forEach(function(node)
+			{
+				node.setting.display ="none"
+			});
+
+		tab[panelIndex].setting.display = "block";
+		}
+
+		tabs(0);
+	</script>
+	<script > 
+		$(".tab").click(function() {
+
+			$(this).addClass("active").siblings().removeClass("active");
+		} )
+
+	</script>
+</body>
+</html>

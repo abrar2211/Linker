@@ -1,0 +1,339 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+header{
+	position: fixed;
+	background: #0DB6BA;
+	width: 100%;
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+
+}
+.left_area h3{
+	color: #ffffff;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 22px;
+	font-weight: 900;
+}
+.logout_btn{
+	padding: 5px;
+	background: white;
+	text-decoration: none;
+	float: right;
+	margin-right: 40px;
+	margin-top: -20px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #0DB6BA;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.logout_btn:hover{
+	background: #0DB6BA;
+	color: white ;
+}
+.sidebar{
+	background: #0DB6BA;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: o.5s;
+	transition-property: left;
+}
+.sidebar a{
+	color: #ffff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+.sidebar a:hover{
+	background: white;
+	color:#0DB6BA ;
+}
+.sidebar i{
+	padding-right: 10px;
+
+}
+label #sidebar_btn{
+	z-index: 1;
+	color:white;
+	position: fixed;
+	cursor: pointer;
+	left: 200px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color; 
+}
+label #sidebar_btn:hover{
+	color: gray;
+}
+#check:checked ~ .sidebar{
+	left: -190px;
+}
+#check:checked ~ .sidebar a span{
+	display: none;
+}
+#check:checked ~ .sidebar a{
+	font-size: 20px;
+	margin-left: 170px;
+	width: 80px;
+}
+#check{
+	display: none;
+}
+.content{
+	padding: 100px 100px 100px 100px;
+
+
+}
+input[type=Search] {
+  width: 120px;
+  box-sizing: border-box;
+  border: 2px solid #0DB6BA;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=Search]:focus {
+   width: 15%;
+}
+ .content button[type=Search]{
+ 	 align-content: center;
+	color: white;
+	font-weight: 400;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0DB6BA  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+  transition: 0.3s;
+	}
+
+	.content button[type=Search]:hover{
+ 	 align-content: center;
+	color: #0DB6BA;
+	font-weight: 400;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid  #0DB6BA;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+
+	}
+
+.Friends{
+	padding: 0px 500px 100px 100px;
+
+}
+.Friends button[type=ID]{
+	text-align: center;
+	font-family: sans-serif;
+	width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #0DB6BA;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white; 
+  padding: 12px 0px 12px 0px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.Friends button[type=Follow]{
+	align-content: center;
+	color: black;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0DB6BA  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Friends button[type=Follow]:hover{
+	background-color: white;
+	color: #0DB6BA;
+	border: 2px solid #0DB6BA;
+	transition: 0.4s ease-out;
+}
+.Friends button[type=Remove]{
+	align-content: center;
+	color: whitesmoke;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: Red  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Friends button[type=Remove]:hover{
+	background-color: white;
+	color:Red;
+	border: 2px solid Red;
+	transition: 0.4s ease-out;
+}
+.ID img{
+	height: 20%;
+	width: 20%;
+	padding: 20px 12px 0px 20px;
+}
+.Friend{
+	padding: 0px 500px 100px 100px;
+}
+.Friend button[type=ID]{
+	text-align: center;
+	font-family: sans-serif;
+	width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #0DB6BA;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white; 
+  padding: 12px 0px 12px 0px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.Friend button[type=Follow]{
+	align-content: center;
+	color: black;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0DB6BA  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Friend button[type=Follow]:hover{
+	background-color: white;
+	color: #0DB6BA;
+	border: 2px solid #0DB6BA;
+	transition: 0.4s ease-out;
+}
+.Friend button[type=Remove]{
+	align-content: center;
+	color: whitesmoke;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: Red  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Friend button[type=Remove]:hover{
+	background-color: white;
+	color:Red;
+	border: 2px solid Red;
+	transition: 0.4s ease-out;
+}
+.ID img{
+	height: 20%;
+	width: 20%;
+	padding: 20px 12px 0px 20px;
+}
+
+.Request{
+	padding: 0px 500px 100px 100px;
+}
+
+.Request button[type=ID]{
+	text-align: center;
+	font-family: sans-serif;
+	width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #0DB6BA;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white; 
+  padding: 12px 0px 12px 0px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.Request button[type=Follow]{
+	align-content: center;
+	color: black;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0DB6BA  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Request button[type=Follow]:hover{
+	background-color: white;
+	color: #0DB6BA;
+	border: 2px solid #0DB6BA;
+	transition: 0.4s ease-out;
+}
+.Request button[type=Remove]{
+	align-content: center;
+	color: whitesmoke;
+	font-weight: 600;
+	width: 80px;
+	height: 40px;
+  box-sizing: border-box;
+  border: 2px solid ghostwhite;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: Red  ;
+  background-position: 10px 10px; 
+  cursor: pointer;
+}
+.Request button[type=Remove]:hover{
+	background-color: white;
+	color:Red;
+	border: 2px solid Red;
+	transition: 0.4s ease-out;
+}
+.ID img{
+	height: 20%;
+	width: 20%;
+	padding: 20px 12px 0px 20px;
+}
